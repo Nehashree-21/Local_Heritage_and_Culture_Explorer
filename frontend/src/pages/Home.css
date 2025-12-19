@@ -1,0 +1,131 @@
+/* ===========================
+   Home Page Styles (Theme 1)
+   =========================== */
+
+.home-container {
+  background-color: #0e0e0e; /* Dark background */
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* 🌅 Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* Later, you can uncomment this background */
+  /*
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(13,13,13,0.9)),
+              url('/images/hero-bg.jpg') center/cover no-repeat;
+  */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(13,13,13,0.9));
+  color: #fff;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff8c00;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  margin: 20px 0 30px;
+  color: #ddd;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn {
+  padding: 12px 30px;
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #ffa733;
+  transform: scale(1.05);
+}
+
+/* 🧭 Featured Section */
+.featured-section {
+  padding: 60px 10%;
+  background-color: #121212;
+  text-align: center;
+}
+
+.featured-section h2 {
+  color: #ff8c00;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* 🪔 Card Styling (Uniform) */
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #ff8c00;
+  font-size: 1.3rem;
+  margin: 15px 0 8px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  padding: 0 15px 15px;
+}
+
+.card a {
+  display: inline-block;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #ffa733;
+  transform: scale(1.05);
+}

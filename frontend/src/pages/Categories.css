@@ -1,0 +1,162 @@
+/* =============================
+   🌆 Categories Page Styling
+   Theme: Orange-Black-Dark
+   ============================= */
+
+/* Container */
+.categories-container {
+  /* Instead of pure black, use deep charcoal gradient */
+  background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* 🌄 Hero Banner (slightly brighter background) */
+.all-sites-banner {
+  position: relative;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
+    url('https://source.unsplash.com/1600x600/?india,heritage,architecture');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.banner-overlay {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.banner-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 15px;
+}
+
+.banner-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.banner-btn {
+  background-color: #ff9800;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #ffa733;
+  transform: translateY(-3px);
+}
+
+/* 🏛️ Category Section */
+/* Category Section – slight soft background contrast */
+.category-section {
+  background: linear-gradient(180deg, #181818 0%, #1d1d1d 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ff9800;
+}
+
+/* 🔲 Category Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+/* 🖼️ Category Card */
+.category-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(255, 152, 0, 0.3);
+}
+
+/* 🖤 Dark overlay text area */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.overlay h3 {
+  font-size: 1.4rem;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+/* 🔘 Button inside card */
+.category-btn {
+  align-self: flex-start;
+  background-color: #ff9800;
+  color: #000;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #ffa733;
+  transform: translateY(-2px);
+}
+
+/* ⏳ Loading text */
+.loading-text {
+  color: #bbb;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-subtitle {
+    font-size: 0.95rem;
+  }
+  .category-card {
+    height: 220px;
+  }
+}
+

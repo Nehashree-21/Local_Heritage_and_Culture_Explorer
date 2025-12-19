@@ -1,0 +1,101 @@
+/* ===========================
+   Auth Page Styles (Theme 1)
+   =========================== */
+
+.auth-container {
+  max-width: 420px;
+  margin: 80px auto;
+  background-color: #1a1a1a;       /* Dark card style */
+  color: #a90b0b;                  /* Light text */
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.auth-container h2 {
+  text-align: center;
+  color: #ff8c00;                  /* Orange title */
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.auth-container p {
+  text-align: center;
+  color: #2e2626;
+  margin-bottom: 25px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+.auth-container input {
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #0e0e0e;       /* Dark field */
+  color: #b37575;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255,140,0,0.6);
+}
+
+/* Button */
+.auth-container button {
+  background: #deae74;
+  color: #7d6f6f;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background-color: #ffa733;
+  transform: scale(1.03);
+}
+
+/* Error message */
+.error {
+  margin-top: 10px;
+  color: #ff4d4d;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Small link below button */
+.auth-container .sub-link {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.auth-container .sub-link a {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-container .sub-link a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

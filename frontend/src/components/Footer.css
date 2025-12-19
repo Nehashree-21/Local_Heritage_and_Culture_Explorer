@@ -1,0 +1,83 @@
+.footer {
+  background-color: #0d0d0d;
+  color: #f5f2e8;
+  padding: 50px 0 20px;
+  border-top: 3px solid #e67e22;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+  gap: 50px;
+}
+
+.footer-brand h2 {
+  color: #e67e22;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-brand p {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  color: #ffa94d;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #f5f2e8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #e67e22;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #f5f2e8;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e67e22;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  color: #999;
+  font-size: 0.85rem;
+}
