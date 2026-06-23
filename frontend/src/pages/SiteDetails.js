@@ -67,7 +67,9 @@ export default function SiteDetails() {
       }).then((r) => r.json());
 
       // 2️⃣ Instantly show new review in UI
-      setReviews((prev) => [newReview, ...prev]);
+      const refreshedReviews = await fetchReviewsBySiteId(id);
+setReviews(refreshedReviews);
+
 
       // 3️⃣ Clear form
       setReviewForm({ username: "", rating: "", review_comment: "" });
